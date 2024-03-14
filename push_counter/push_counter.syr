@@ -1,0 +1,508 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: push_counter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "push_counter.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "push_counter"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : push_counter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "push_counter.v" in library work
+Module <push_counter> compiled
+Module <decoderrrrr> compiled
+No errors in compilation
+Analysis of file <"push_counter.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <push_counter> in library <work>.
+
+Analyzing hierarchy for module <test> in library <work>.
+
+Analyzing hierarchy for module <decoderrrrr> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <push_counter>.
+Module <push_counter> is correct for synthesis.
+ 
+Analyzing module <test> in library <work>.
+Module <test> is correct for synthesis.
+ 
+Analyzing module <decoderrrrr> in library <work>.
+Module <decoderrrrr> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <test>.
+    Related source file is "push_counter.v".
+    Found 1-bit register for signal <cnt>.
+    Found 1-bit register for signal <temp>.
+    Summary:
+	inferred   2 D-type flip-flop(s).
+Unit <test> synthesized.
+
+
+Synthesizing Unit <decoderrrrr>.
+    Related source file is "push_counter.v".
+    Found 16x8-bit ROM for signal <out>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <decoderrrrr> synthesized.
+
+
+Synthesizing Unit <push_counter>.
+    Related source file is "push_counter.v".
+WARNING:Xst:1780 - Signal <p_p> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <opr<4>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <f> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <cn> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit register for signal <sun>.
+    Found 4-bit register for signal <a>.
+    Found 4-bit adder for signal <a$addsub0000> created at line 64.
+    Found 4-bit comparator less for signal <a$cmp_lt0000> created at line 63.
+    Found 4-bit up counter for signal <b>.
+    Found 29-bit up counter for signal <cn2>.
+    Found 1-bit register for signal <o>.
+    Found 5-bit register for signal <opr>.
+    Found 1-bit register for signal <p>.
+    Found 1-bit register for signal <sclk>.
+    Found 1-bit xor2 for signal <sclk$xor0000> created at line 41.
+    Found 29-bit comparator less for signal <sun$cmp_lt0000> created at line 82.
+    Found 29-bit comparator less for signal <sun$cmp_lt0001> created at line 92.
+    Found 1-bit register for signal <z>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  17 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   3 Comparator(s).
+Unit <push_counter> synthesized.
+
+WARNING:Xst:524 - All outputs of the instance <a2> of the block <test> are unconnected in block <push_counter>.
+   This instance will be removed from the design along with all underlying logic
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 2
+ 29-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 7
+ 1-bit register                                        : 4
+ 4-bit register                                        : 2
+ 5-bit register                                        : 1
+# Comparators                                          : 3
+ 29-bit comparator less                                : 2
+ 4-bit comparator less                                 : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <sun_2> (without init value) has a constant value of 1 in block <push_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sun_3> (without init value) has a constant value of 1 in block <push_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <opr_4> of sequential type is unconnected in block <push_counter>.
+WARNING:Xst:2404 -  FFs/Latches <opr<4:4>> (without init value) have a constant value of 0 in block <push_counter>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 2
+ 29-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+# Comparators                                          : 3
+ 29-bit comparator less                                : 2
+ 4-bit comparator less                                 : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <sun_2> (without init value) has a constant value of 1 in block <push_counter>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sun_3> (without init value) has a constant value of 1 in block <push_counter>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <push_counter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block push_counter, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 47
+ Flip-Flops                                            : 47
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : push_counter.ngr
+Top Level Output File Name         : push_counter
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 15
+
+Cell Usage :
+# BELS                             : 158
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 32
+#      LUT2                        : 12
+#      LUT3                        : 5
+#      LUT4                        : 20
+#      LUT4_D                      : 2
+#      MUXCY                       : 48
+#      VCC                         : 1
+#      XORCY                       : 29
+# FlipFlops/Latches                : 47
+#      FD                          : 3
+#      FDC                         : 4
+#      FDCE                        : 4
+#      FDE                         : 4
+#      FDR                         : 30
+#      FDRE                        : 1
+#      FDSE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 14
+#      IBUF                        : 2
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       42  out of    960     4%  
+ Number of Slice Flip Flops:             47  out of   1920     2%  
+ Number of 4 input LUTs:                 79  out of   1920     4%  
+ Number of IOs:                          15
+ Number of bonded IOBs:                  15  out of     83    18%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 38    |
+sclk                               | NONE(p)                | 1     |
+p                                  | NONE(a_0)              | 8     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 8     |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.978ns (Maximum Frequency: 143.302MHz)
+   Minimum input arrival time before clock: 1.946ns
+   Maximum output required time after clock: 5.870ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.978ns (frequency: 143.302MHz)
+  Total number of paths / destination ports: 2105 / 72
+-------------------------------------------------------------------------
+Delay:               6.978ns (Levels of Logic = 12)
+  Source:            cn2_7 (FF)
+  Destination:       cn2_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cn2_7 to cn2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.591   0.706  cn2_7 (cn2_7)
+     LUT1:I0->O            1   0.704   0.000  Mcompar_sun_cmp_lt0001_cy<0>_rt (Mcompar_sun_cmp_lt0001_cy<0>_rt)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_sun_cmp_lt0001_cy<0> (Mcompar_sun_cmp_lt0001_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_sun_cmp_lt0001_cy<1> (Mcompar_sun_cmp_lt0001_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_sun_cmp_lt0001_cy<2> (Mcompar_sun_cmp_lt0001_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_sun_cmp_lt0001_cy<3> (Mcompar_sun_cmp_lt0001_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_sun_cmp_lt0001_cy<4> (Mcompar_sun_cmp_lt0001_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_sun_cmp_lt0001_cy<5> (Mcompar_sun_cmp_lt0001_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_sun_cmp_lt0001_cy<6> (Mcompar_sun_cmp_lt0001_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_sun_cmp_lt0001_cy<7> (Mcompar_sun_cmp_lt0001_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_sun_cmp_lt0001_cy<8> (Mcompar_sun_cmp_lt0001_cy<8>)
+     MUXCY:CI->O           3   0.459   0.706  Mcompar_sun_cmp_lt0001_cy<9> (Mcompar_sun_cmp_lt0001_cy<9>)
+     LUT2:I0->O           29   0.704   1.261  cn2_and00001 (cn2_and0000)
+     FDR:R                     0.911          cn2_0
+    ----------------------------------------
+    Total                      6.978ns (4.305ns logic, 2.673ns route)
+                                       (61.7% logic, 38.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'sclk'
+  Clock period: 2.322ns (frequency: 430.663MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.322ns (Levels of Logic = 0)
+  Source:            p (FF)
+  Destination:       p (FF)
+  Source Clock:      sclk rising
+  Destination Clock: sclk rising
+
+  Data Path: p to p
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              9   0.591   0.820  p (p)
+     FDR:R                     0.911          p
+    ----------------------------------------
+    Total                      2.322ns (1.502ns logic, 0.820ns route)
+                                       (64.7% logic, 35.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'p'
+  Clock period: 6.338ns (frequency: 157.778MHz)
+  Total number of paths / destination ports: 129 / 12
+-------------------------------------------------------------------------
+Delay:               6.338ns (Levels of Logic = 4)
+  Source:            b_3 (FF)
+  Destination:       a_0 (FF)
+  Source Clock:      p rising
+  Destination Clock: p rising
+
+  Data Path: b_3 to a_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.591   0.706  b_3 (b_3)
+     LUT4_D:I0->O          1   0.704   0.595  b_and000022 (b_and000022)
+     LUT2:I0->O            3   0.704   0.535  b_and000023 (b_and0000)
+     LUT4:I3->O            7   0.704   0.787  b_not0001 (b_not0001)
+     LUT2:I1->O            1   0.704   0.000  a_mux0000<3>1 (a_mux0000<3>)
+     FDC:D                     0.308          a_0
+    ----------------------------------------
+    Total                      6.338ns (3.715ns logic, 2.623ns route)
+                                       (58.6% logic, 41.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.946ns (Levels of Logic = 1)
+  Source:            pus (PAD)
+  Destination:       o (FF)
+  Destination Clock: clk rising
+
+  Data Path: pus to o
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.218   0.420  pus_IBUF (pus_IBUF)
+     FD:D                      0.308          o
+    ----------------------------------------
+    Total                      1.946ns (1.526ns logic, 0.420ns route)
+                                       (78.4% logic, 21.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 30 / 9
+-------------------------------------------------------------------------
+Offset:              5.870ns (Levels of Logic = 2)
+  Source:            opr_1 (FF)
+  Destination:       seven<6> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: opr_1 to seven<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              7   0.591   0.883  opr_1 (opr_1)
+     LUT4:I0->O            1   0.704   0.420  a1/Mrom_out21 (seven_2_OBUF)
+     OBUF:I->O                 3.272          seven_2_OBUF (seven<2>)
+    ----------------------------------------
+    Total                      5.870ns (4.567ns logic, 1.303ns route)
+                                       (77.8% logic, 22.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.94 secs
+ 
+--> 
+
+Total memory usage is 149364 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

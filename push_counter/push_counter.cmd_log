@@ -1,0 +1,83 @@
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 push_counter.ngc push_counter.ngd  
+vhdtdtfi -lib work C:/Youhen/push_counter/push_counter.v -lang verilog -prj push_counter -o push_counter.spl -module push_counter -template C:/Xilinx/13.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e push_counter.spl C:/Youhen/push_counter/push_counter.sym 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc push_counter.ucf -p xc3s100e-cp132-4 push_counter.ngc push_counter.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc push_counter.ucf -p xc3s100e-cp132-4 push_counter.ngc push_counter.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o push_counter_map.ncd push_counter.ngd push_counter.pcf 
+par -w -intstyle ise -ol high -t 1 push_counter_map.ncd push_counter.ncd push_counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml push_counter.twx push_counter.ncd -o push_counter.twr push_counter.pcf -ucf push_counter.ucf 
+bitgen -intstyle ise -f push_counter.ut push_counter.ncd 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc push_counter.ucf -p xc3s100e-cp132-4 push_counter.ngc push_counter.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o push_counter_map.ncd push_counter.ngd push_counter.pcf 
+par -w -intstyle ise -ol high -t 1 push_counter_map.ncd push_counter.ncd push_counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml push_counter.twx push_counter.ncd -o push_counter.twr push_counter.pcf -ucf push_counter.ucf 
+bitgen -intstyle ise -f push_counter.ut push_counter.ncd 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc push_counter.ucf -p xc3s100e-cp132-4 push_counter.ngc push_counter.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o push_counter_map.ncd push_counter.ngd push_counter.pcf 
+par -w -intstyle ise -ol high -t 1 push_counter_map.ncd push_counter.ncd push_counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml push_counter.twx push_counter.ncd -o push_counter.twr push_counter.pcf -ucf push_counter.ucf 
+bitgen -intstyle ise -f push_counter.ut push_counter.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc push_counter.ucf -p xc3s100e-cp132-4 push_counter.ngc push_counter.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o push_counter_map.ncd push_counter.ngd push_counter.pcf 
+par -w -intstyle ise -ol high -t 1 push_counter_map.ncd push_counter.ncd push_counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml push_counter.twx push_counter.ncd -o push_counter.twr push_counter.pcf -ucf push_counter.ucf 
+bitgen -intstyle ise -f push_counter.ut push_counter.ncd 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc push_counter.ucf -p xc3s100e-cp132-4 push_counter.ngc push_counter.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o push_counter_map.ncd push_counter.ngd push_counter.pcf 
+par -w -intstyle ise -ol high -t 1 push_counter_map.ncd push_counter.ncd push_counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml push_counter.twx push_counter.ncd -o push_counter.twr push_counter.pcf -ucf push_counter.ucf 
+bitgen -intstyle ise -f push_counter.ut push_counter.ncd 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc push_counter.ucf -p xc3s100e-cp132-4 push_counter.ngc push_counter.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o push_counter_map.ncd push_counter.ngd push_counter.pcf 
+par -w -intstyle ise -ol high -t 1 push_counter_map.ncd push_counter.ncd push_counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml push_counter.twx push_counter.ncd -o push_counter.twr push_counter.pcf -ucf push_counter.ucf 
+bitgen -intstyle ise -f push_counter.ut push_counter.ncd 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc push_counter.ucf -p xc3s100e-cp132-4 push_counter.ngc push_counter.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o push_counter_map.ncd push_counter.ngd push_counter.pcf 
+par -w -intstyle ise -ol high -t 1 push_counter_map.ncd push_counter.ncd push_counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml push_counter.twx push_counter.ncd -o push_counter.twr push_counter.pcf -ucf push_counter.ucf 
+bitgen -intstyle ise -f push_counter.ut push_counter.ncd 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc push_counter.ucf -p xc3s100e-cp132-4 push_counter.ngc push_counter.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o push_counter_map.ncd push_counter.ngd push_counter.pcf 
+par -w -intstyle ise -ol high -t 1 push_counter_map.ncd push_counter.ncd push_counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml push_counter.twx push_counter.ncd -o push_counter.twr push_counter.pcf -ucf push_counter.ucf 
+bitgen -intstyle ise -f push_counter.ut push_counter.ncd 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+xst -intstyle ise -ifn "C:/Youhen/push_counter/push_counter.xst" -ofn "C:/Youhen/push_counter/push_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc push_counter.ucf -p xc3s100e-cp132-4 push_counter.ngc push_counter.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o push_counter_map.ncd push_counter.ngd push_counter.pcf 
+par -w -intstyle ise -ol high -t 1 push_counter_map.ncd push_counter.ncd push_counter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml push_counter.twx push_counter.ncd -o push_counter.twr push_counter.pcf -ucf push_counter.ucf 
+bitgen -intstyle ise -f push_counter.ut push_counter.ncd 

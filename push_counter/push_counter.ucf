@@ -1,0 +1,18 @@
+NET "clk" LOC =B8;
+NET "pus" LOC = G12;
+NET "rst" LOC = A7;
+///////////////////
+NET "seven[7]" LOC =N13;
+NET "seven[6]" LOC =M12;
+NET "seven[5]" LOC =L13;
+NET "seven[4]" LOC =P12;
+NET "seven[3]" LOC =N11;
+NET "seven[2]" LOC =N14;
+NET "seven[1]" LOC =H12;
+NET "seven[0]" LOC =L14;
+
+/////
+NET "sun[0]"LOC =F12;
+NET "sun[1]"LOC =J12;
+NET "sun[2]"LOC =M13;
+NET "sun[3]"LOC =K14;

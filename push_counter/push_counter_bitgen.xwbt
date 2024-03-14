@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Youhen\push_counter\push_counter.ncd
+OUTFILE=C:\Youhen\push_counter\push_counter.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\Youhen\push_counter
+LICENSE=WebPack
+USER_INFO=210655468_1777487859_0_178

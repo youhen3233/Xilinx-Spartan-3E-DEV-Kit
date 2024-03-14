@@ -1,0 +1,197 @@
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 road.ngc road.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 
+xst -intstyle ise -ifn "C:/Youhen/GIA_road/road.xst" -ofn "C:/Youhen/GIA_road/road.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc road.ucf -p xc3s100e-cp132-4 road.ngc road.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o road_map.ncd road.ngd road.pcf 
+par -w -intstyle ise -ol high -t 1 road_map.ncd road.ncd road.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml road.twx road.ncd -o road.twr road.pcf -ucf road.ucf 
+bitgen -intstyle ise -f road.ut road.ncd 

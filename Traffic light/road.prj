@@ -1,0 +1,2 @@
+verilog work "../traffic_light/decoder.v"
+verilog work "road.v"

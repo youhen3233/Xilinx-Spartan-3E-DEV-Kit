@@ -1,0 +1,519 @@
+Release 13.4 - xst O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.14 secs
+ 
+--> Reading design: road.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "road.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "road"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : road
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../traffic_light/decoder.v" in library work
+Compiling verilog file "road.v" in library work
+Module <decoder> compiled
+Module <road> compiled
+No errors in compilation
+Analysis of file <"road.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <road> in library <work> with parameters.
+	S0 = "00"
+	S1 = "01"
+	S2 = "10"
+
+Analyzing hierarchy for module <decoder> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <road>.
+	S0 = 2'b00
+	S1 = 2'b01
+	S2 = 2'b10
+Module <road> is correct for synthesis.
+ 
+Analyzing module <decoder> in library <work>.
+Module <decoder> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <decoder>.
+    Related source file is "../traffic_light/decoder.v".
+    Found 16x8-bit ROM for signal <out>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <decoder> synthesized.
+
+
+Synthesizing Unit <road>.
+    Related source file is "road.v".
+    Found finite state machine <FSM_0> for signal <sh1>.
+    -----------------------------------------------------------------------
+    | States             | 2                                              |
+    | Transitions        | 19                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 2                                              |
+    | Clock              | wv_s                      (rising_edge)        |
+    | Reset              | rst                       (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0001                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Using one-hot encoding for signal <p_s>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <p_s> of Case statement line 42 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <p_s> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Using one-hot encoding for signal <x>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <p_s> of Case statement line 42 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <p_s> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <p_s> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <p_s> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <p_s> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <p_s> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <p_s> of Case statement line 0 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <p_s> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 4-bit register for signal <sun>.
+    Found 26-bit up counter for signal <cn1>.
+    Found 26-bit comparator less for signal <cn1$cmp_lt0000> created at line 148.
+    Found 26-bit comparator less for signal <cn1$cmp_lt0001> created at line 153.
+    Found 26-bit up counter for signal <cn2>.
+    Found 26-bit comparator less for signal <cn2$cmp_lt0000> created at line 173.
+    Found 4-bit register for signal <opr>.
+    Found 26-bit comparator greatequal for signal <opr$cmp_ge0000> created at line 173.
+    Found 3-bit register for signal <p_s>.
+    Found 4-bit register for signal <sh0>.
+    Found 4-bit subtractor for signal <sh0$share0000>.
+    Found 4-bit comparator greater for signal <sh1$cmp_gt0000> created at line 129.
+    Found 26-bit comparator less for signal <sun$cmp_lt0000> created at line 166.
+    Found 26-bit comparator less for signal <sun$or0000>.
+    Found 1-bit register for signal <wv_s>.
+    Found 4-bit register for signal <x>.
+    Found 1-bit register for signal <z>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred   2 Counter(s).
+	inferred  14 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   7 Comparator(s).
+Unit <road> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 4-bit subtractor                                      : 1
+# Counters                                             : 2
+ 26-bit up counter                                     : 2
+# Registers                                            : 7
+ 1-bit register                                        : 2
+ 3-bit register                                        : 1
+ 4-bit register                                        : 4
+# Comparators                                          : 7
+ 26-bit comparator greatequal                          : 1
+ 26-bit comparator less                                : 5
+ 4-bit comparator greater                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <sh1/FSM> on signal <sh1[1:1]> with sequential encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0001  | 0
+ 0000  | 1
+-------------------
+WARNING:Xst:1710 - FF/Latch <sun_2> (without init value) has a constant value of 1 in block <road>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sun_3> (without init value) has a constant value of 1 in block <road>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 4-bit subtractor                                      : 1
+# Counters                                             : 2
+ 26-bit up counter                                     : 2
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+# Comparators                                          : 7
+ 26-bit comparator greatequal                          : 1
+ 26-bit comparator less                                : 5
+ 4-bit comparator greater                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <sun_2> (without init value) has a constant value of 1 in block <road>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sun_3> (without init value) has a constant value of 1 in block <road>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <x_0> of sequential type is unconnected in block <road>.
+
+Optimizing unit <road> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block road, actual ratio is 8.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 71
+ Flip-Flops                                            : 71
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : road.ngr
+Top Level Output File Name         : road
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 17
+
+Cell Usage :
+# BELS                             : 283
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 59
+#      LUT2                        : 11
+#      LUT3                        : 12
+#      LUT3_D                      : 1
+#      LUT3_L                      : 2
+#      LUT4                        : 43
+#      LUT4_D                      : 2
+#      LUT4_L                      : 5
+#      MUXCY                       : 84
+#      MUXF5                       : 3
+#      VCC                         : 1
+#      XORCY                       : 52
+# FlipFlops/Latches                : 71
+#      FDC                         : 11
+#      FDE                         : 4
+#      FDP                         : 1
+#      FDR                         : 27
+#      FDRE                        : 26
+#      FDRSE                       : 1
+#      FDSE                        : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 16
+#      IBUF                        : 1
+#      OBUF                        : 15
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       76  out of    960     7%  
+ Number of Slice Flip Flops:             71  out of   1920     3%  
+ Number of 4 input LUTs:                142  out of   1920     7%  
+ Number of IOs:                          17
+ Number of bonded IOBs:                  17  out of     83    20%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 62    |
+wv_s                               | NONE(sh0_0)            | 9     |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 12    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 6.806ns (Maximum Frequency: 146.922MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 6.240ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 6.806ns (frequency: 146.922MHz)
+  Total number of paths / destination ports: 3393 / 147
+-------------------------------------------------------------------------
+Delay:               6.806ns (Levels of Logic = 9)
+  Source:            cn2_6 (FF)
+  Destination:       cn2_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cn2_6 to cn2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             3   0.591   0.706  cn2_6 (cn2_6)
+     LUT3:I0->O            1   0.704   0.000  Mcompar_sun_cmp_lt0000_lut<1> (Mcompar_sun_cmp_lt0000_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_sun_cmp_lt0000_cy<1> (Mcompar_sun_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_sun_cmp_lt0000_cy<2> (Mcompar_sun_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_sun_cmp_lt0000_cy<3> (Mcompar_sun_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_sun_cmp_lt0000_cy<4> (Mcompar_sun_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_sun_cmp_lt0000_cy<5> (Mcompar_sun_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcompar_sun_cmp_lt0000_cy<6> (Mcompar_sun_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           7   0.459   0.712  Mcompar_sun_cmp_lt0000_cy<7> (Mcompar_sun_cmp_lt0000_cy<7>)
+     LUT4:I3->O           26   0.704   1.260  cn2_and00001 (cn2_and0000)
+     FDRE:R                    0.911          cn2_0
+    ----------------------------------------
+    Total                      6.806ns (4.128ns logic, 2.678ns route)
+                                       (60.6% logic, 39.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'wv_s'
+  Clock period: 6.253ns (frequency: 159.923MHz)
+  Total number of paths / destination ports: 122 / 9
+-------------------------------------------------------------------------
+Delay:               6.253ns (Levels of Logic = 4)
+  Source:            sh0_2 (FF)
+  Destination:       sh0_1 (FF)
+  Source Clock:      wv_s rising
+  Destination Clock: wv_s rising
+
+  Data Path: sh0_2 to sh0_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              9   0.591   0.995  sh0_2 (sh0_2)
+     LUT3:I0->O            5   0.704   0.637  sh0_mux0000<3>_SW0 (N2)
+     LUT4_D:I3->O          2   0.704   0.451  sh0_and00001 (sh0_and0000)
+     LUT4:I3->O            1   0.704   0.455  sh0_mux0000<1>28 (sh0_mux0000<1>28)
+     LUT4:I2->O            1   0.704   0.000  sh0_mux0000<1>92 (sh0_mux0000<1>)
+     FDC:D                     0.308          sh0_1
+    ----------------------------------------
+    Total                      6.253ns (3.715ns logic, 2.538ns route)
+                                       (59.4% logic, 40.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 36 / 12
+-------------------------------------------------------------------------
+Offset:              6.240ns (Levels of Logic = 2)
+  Source:            p_s_1 (FF)
+  Destination:       sign<2> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: p_s_1 to sign<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             17   0.591   1.226  p_s_1 (p_s_1)
+     LUT4:I0->O            2   0.704   0.447  n_s<2>1 (n_s<2>)
+     OBUF:I->O                 3.272          sign_2_OBUF (sign<2>)
+    ----------------------------------------
+    Total                      6.240ns (4.567ns logic, 1.673ns route)
+                                       (73.2% logic, 26.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'wv_s'
+  Total number of paths / destination ports: 6 / 3
+-------------------------------------------------------------------------
+Offset:              5.776ns (Levels of Logic = 2)
+  Source:            x_1 (FF)
+  Destination:       sign<1> (PAD)
+  Source Clock:      wv_s rising
+
+  Data Path: x_1 to sign<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.591   0.762  x_1 (x_1)
+     LUT4:I0->O            2   0.704   0.447  n_s<1>1 (n_s<1>)
+     OBUF:I->O                 3.272          sign_1_OBUF (sign<1>)
+    ----------------------------------------
+    Total                      5.776ns (4.567ns logic, 1.209ns route)
+                                       (79.1% logic, 20.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.61 secs
+ 
+--> 
+
+Total memory usage is 150388 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    5 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

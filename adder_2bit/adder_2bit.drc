@@ -1,0 +1,8 @@
+Release 13.4 Drc O.87xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Fri Mar 24 17:08:08 2017
+
+drc -z adder_2bit.ncd adder_2bit.pcf
+
+DRC detected 0 errors and 0 warnings.

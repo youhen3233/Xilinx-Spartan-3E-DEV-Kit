@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Youhen\adder_2bit\adder_2bit.ncd
+OUTFILE=C:\Youhen\adder_2bit\adder_2bit.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\Youhen\adder_2bit
+LICENSE=WebPack
+USER_INFO=210655468_1777487859_0_178

@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Youhen\enhance_3\enhance_3.ncd
-OUTFILE=C:\Youhen\enhance_3\enhance_3.bit
-FAMILY=Spartan3E
-PART=xc3s100e-4cp132
-WORKINGDIR=C:\Youhen\enhance_3
-LICENSE=WebPack
-USER_INFO=210655468_1777487859_0_178

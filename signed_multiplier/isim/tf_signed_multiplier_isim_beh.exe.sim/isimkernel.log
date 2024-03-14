@@ -1,0 +1,29 @@
+Command line:
+   tf_signed_multiplier_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  2203
+
+Fri Mar 17 18:15:18 2017
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 314.45 Meg
+
+ Total Signals          : 108
+ Total Nets             : 208
+ Total Signal Drivers   : 46
+ Total Blocks           : 18
+ Total Primitive Blocks : 13
+ Total Processes        : 48
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 362
+Total Line Count : 50
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 314.45 Meg
+
+Fri Mar 17 18:15:51 2017
+

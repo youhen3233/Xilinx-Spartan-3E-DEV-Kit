@@ -1,0 +1,26 @@
+Running: C:\Xilinx\13.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -o J:/Youhen/signed_multiplier/tf_signed_multiplier_isim_beh.exe -prj J:/Youhen/signed_multiplier/tf_signed_multiplier_beh.prj work.tf_signed_multiplier work.glbl 
+ISim O.87xd (signature 0x2f00eba5)
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
+Determining compilation order of HDL files
+Analyzing Verilog file "J:/Youhen/signed_multiplier/signed_multiplier.v" into library work
+Analyzing Verilog file "J:/Youhen/signed_multiplier/tf_signed_multiplier.v" into library work
+Analyzing Verilog file "C:/Xilinx/13.4/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:327 - "J:/Youhen/signed_multiplier/signed_multiplier.v" Line 31: Concatenation with unsized literal; will interpret as 32 bits
+WARNING:HDLCompiler:189 - "J:/Youhen/signed_multiplier/signed_multiplier.v" Line 37: Size mismatch in connection of port <C0>. Formal port size is 1-bit while actual signal size is 32-bit.
+WARNING:HDLCompiler:189 - "J:/Youhen/signed_multiplier/signed_multiplier.v" Line 31: Size mismatch in connection of port <in_1>. Formal port size is 4-bit while actual signal size is 35-bit.
+WARNING:HDLCompiler:189 - "J:/Youhen/signed_multiplier/signed_multiplier.v" Line 34: Size mismatch in connection of port <C0>. Formal port size is 1-bit while actual signal size is 32-bit.
+Completed static elaboration
+Fuse Memory Usage: 66940 KB
+Fuse CPU Usage: 327 ms
+Compiling module adder
+Compiling module bitadder
+Compiling module signed_multiplier
+Compiling module tf_signed_multiplier
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Compiled 5 Verilog Units
+Built simulation executable J:/Youhen/signed_multiplier/tf_signed_multiplier_isim_beh.exe
+Fuse Memory Usage: 73472 KB
+Fuse CPU Usage: 390 ms

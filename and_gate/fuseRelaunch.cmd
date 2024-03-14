@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Youhen/and_gate/tb_and_gate_isim_beh.exe" -prj "C:/Youhen/and_gate/tb_and_gate_beh.prj" "work.tb_and_gate" "work.glbl" 

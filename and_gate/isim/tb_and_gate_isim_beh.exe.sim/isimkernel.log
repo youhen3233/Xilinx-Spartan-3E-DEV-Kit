@@ -1,0 +1,10 @@
+Command line:
+   tb_and_gate_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  1360
+
+Fri Feb 24 16:23:22 2017
+
+
+ Elaboration Time: 0.03125 sec
